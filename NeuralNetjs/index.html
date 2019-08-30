@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <title> Square Detector </title>
+    <script src="https://unpkg.com/konva@4.0.0/konva.min.js"></script>
+    <script src="net.js"></script>
+  </head>
+
+  <body>
+    <h1> Drag one of the corners of the quadrilateral to resize it. </h1>
+    <h2> Click on square or rect to train the computer to learn the current shape. </h2>
+    <h3> Training the computer will improve its ability to know from a square and rectangle. </h3>
+    <h4> Click on guess for the computer to determine the shape. </h4>
+
+    <div id="interaction">
+      <div id="container">
+        <script src="visualize.js"></script>
+      </div>
+
+      <h2 id="guessDisplay">Computers Guess: </h2>
+
+      <div id="buttons">
+        <button onClick="correctAsSquare()">Square</button>
+        <button onClick="correctAsRect()">Rect</button>
+        <button onClick="displayGuess()">Guess</button>
+      </div>
+    </div>
+  </body>
+
+</html>
